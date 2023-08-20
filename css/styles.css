@@ -1048,6 +1048,7 @@ body {
    .section-footer-container {
     width: 428px;
     flex-shrink: 0;
+    display: block;
 
    }
    .footer-container {
@@ -1071,6 +1072,35 @@ body {
     width: 208px;
     height: 80px;
     flex-shrink: 0;
+    margin: 72px 110px;
+   }
+   .social-media {
+    text-align: center;
+   }
+   .foot-form-paragraph {
+    text-align: center;
+    margin: 72px 177px 17px 177px
+   }
+   .foot-form-container {
+    display: block;
+    width: 398px;
+    height: 136px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   }
+   .foot-input {
+    width: 398px;
+    height: 40px;
+    flex-shrink: 0;
+   }
+   .form-button {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
    }
    .footer-paragraph {
     width: 268px;
