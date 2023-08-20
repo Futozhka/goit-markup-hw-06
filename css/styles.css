@@ -970,7 +970,7 @@ body {
     color: var(--navyblue, #2E2F42);
     text-align: center;
     align-self: stretch;
-    margin: 96px 16px 8px 16px;
+
     
     /* Header 2 */
     font-family: "Roboto" sans-serif;
@@ -992,6 +992,7 @@ body {
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+    align-self: stretch;
   }
   .list-two {
     display: inline-flex;
