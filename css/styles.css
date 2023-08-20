@@ -982,6 +982,24 @@ body {
     text-transform: capitalize;
 
   }
+  .list-item {
+    width: 396px;
+  }
+  .img {
+    display: block;
+    margin: auto;
+  }
+  .list-four {
+    display: block;
+    margin: auto;
+  }
+  .list-item-four {
+    width: 264px;
+    margin: 10 auto;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
   .section-two-paragraph {
     color: var(--slate, #434455);
 
