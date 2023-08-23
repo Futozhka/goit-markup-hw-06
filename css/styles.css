@@ -1245,6 +1245,8 @@ body {
   }
   .section-footer {
     padding: 96px 0;
+    width: 768px;
+    height: 456px;
   }
   .section-one-header {
     color: var(--white, #FFF);
@@ -1357,74 +1359,36 @@ body {
     justify-content: center;
   }
   
-  
-   .section-footer-container {
-    width: 428px;
-    flex-shrink: 0;
-    display: block;
-
-   }
    .footer-container {
-    width: 268px;
-    height: 112px;
-    flex-shrink: 0;
-    align-items: center;
+    margin: auto 24px 72px 108px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
     justify-content: center;
+  
    }
-   .logo-class {
-    text-align: center;
-    display: inline-flex;
-    height: 24px;
-    align-items: center;
-    flex-shrink: 0;
+   .footer-paragraph {
+    text-align: start;
+    width: 264px;
    }
-   .logo-class-footer {
-    margin-left: 155px;
-   }
-   .footer-logo {
-    width: 208px;
-    height: 80px;
-    flex-shrink: 0;
-    margin: 72px 110px;
-   }
-   .social-media {
-    text-align: center;
-   }
-   .foot-form {
-    display: block;
-   }
-   .foot-form-paragraph {
-    text-align: center;
-    margin: 72px 177px 17px 177px
-   }
-   .foot-form-container {
-    display: block;
-    width: 398px;
-    height: 136px;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-   }
-   .foot-input {
-    width: 398px;
-    height: 40px;
-    box-sizing: border-box;
-   }
-   .form-button {
-    display: inline-flex;
-    padding: 8px 24px;
+   .social-media-list {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin: 16px 282px 96px 131px;
    }
-   .footer-paragraph {
-    width: 268px;
-    margin-left: 80px;
-    margin-right: 80px;
+   .foot-form {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 24px;
    }
-    
+   .foot-form-container {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+   }
   .button-class {
     display: inline-flex;
     padding: 16px 32px;
