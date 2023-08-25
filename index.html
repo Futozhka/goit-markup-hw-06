@@ -51,78 +51,81 @@
               >
             </li>
           </ul>
-        <!-- <div class="mobile-menu mobile-menu-hidden" data-modal-open>  
-          <button class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu">
-            <svg width="32" height="22">
-              <use href=images/icons.svg#icon-charm_menu-hamburger>
-              </use>
+        </address>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="menu-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-charm_menu-hamburger">
+          </use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="modal-menu modal-button menu-close js-close-menu">
+            <svg class="modal-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18"></use>
             </svg>
           </button>
-          <div class="mobile-menu is-hidden" data-modal>
-            <div class="mobile-menu">
-              <button class="menu-toggle js-close-menu" type="button" data-modal-close>
-                <svg class="modal-svg" width="8" height="8">
-                  <use href="./images/icons.svg#icon-close-black-18"></use>
+          <ul class="list mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="list-one current link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="list-one link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="list-one link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="nav-address">
+            <ul class="list nav-address-mob">
+              <li>
+                <a class="list-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="list-link link mobile-email" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              
+            </ul>
+          </address>
+          <ul class="social-link mobile-links list">
+            <li class="social-link-list">
+              <a class="link-person mobile-menu-link" href="">
+                <svg class="svg-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram1"></use>
                 </svg>
-              </button>
-              <ul>
-                <li><h2>Studio</h2></li>
-                <li><h2>Potrfolio</h2></li>
-                <li><h2>Contacts</h2></li>
-              </ul>
-              <address class="nav-address">
-                <ul class="list nav-menu">
-                  <li>
-                    <a class="list-link link" href="tel:+110001111111"
-                      >+11 (000) 111-11-11</a
-                    >
-                  </li>
-                  <li>
-                    <a class="list-link link" href="mailto:info@devstudio.com"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                  
-                </ul>
-              </address>
-              <ul class="social-link list">
-                <li class="social-link-list">
-                  <a class="link-person" href="">
-                    <svg class="svg-social" width="16" height="16">
-                      <use href="./images/icons.svg#icon-instagram1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-link-list">
-                  <a class="link-person" href="">
-                    <svg class="svg-social" width="16" height="16">
-                      <use href="./images/icons.svg#icon-twitter2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-link-list">
-                  <a class="link-person" href="">
-                    <svg class="svg-social" width="16" height="16">
-                      <use href="./images/icons.svg#icon-facebook3"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-link-list">
-                  <a class="link-person" href="">
-                    <svg class="svg-social" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin4"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <script defer src="js/mobile-menu.js"></script>
-            </div>
-          -->
-             
-
-        </address>
+              </a>
+            </li>
+            <li class="social-link-list mobile-links-list">
+              <a class="link-person mobile-menu-link" href="">
+                <svg class="svg-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-list mobile-links-list">
+              <a class="link-person mobile-menu-link" href="">
+                <svg class="svg-social mobile-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-list mobile-links-list">
+              <a class="link-person mobile-menu-link" href="">
+                <svg class="svg-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin4"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
       </div>
     </header>
     <main>
@@ -602,5 +605,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
