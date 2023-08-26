@@ -1071,7 +1071,7 @@ body {
     width: 264px;
     margin: 72px auto;
     border-radius: 0px 0px 4px 4px;
-    background: var(--white, #FFF);
+    background: var(--white-color, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
   .list-customers {
@@ -1404,7 +1404,7 @@ body {
   .section-four {
     padding: 96px 0;
     justify-content: center;
-    background: var(--cloud, #F4F4FD);   
+    background: var(--cloud-color, #F4F4FD);   
   }
   .section-five {
     padding: 96px 0;
@@ -1415,7 +1415,7 @@ body {
     height: 456px;
   }
   .section-one-header {
-    color: var(--white, #FFF);
+    color: var(--white-color, #FFF);
     text-align: center;
 
     /* Header 1 */
@@ -1438,7 +1438,7 @@ body {
     align-items: center;
   }
   .section-two-header {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navy-blue-modal-color, #2E2F42);
     width: 264px;
     /* Header 2 */
     font-family: Roboto;
@@ -1454,7 +1454,7 @@ body {
   .section-two-paragraph {
     max-width: 356px;
     max-height: 72px;
-    color: var(--slate, #434455);
+    color: var(--slate-color, #434455);
     align-self: stretch;
     /* Body Medium */
     font-family: Roboto;
