@@ -41,7 +41,6 @@ ul {
 }
 
 .list-person {
-  padding: 32px 16px;
   padding: 32px 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -187,7 +186,6 @@ img {
 }
 .header-nav {
   display: flex;
-  margin-right: auto;
   align-items: center;
 }
 .header-nav .list-one {
@@ -207,6 +205,9 @@ img {
 .nav-address {
   font-style: normal;
   margin-left: auto;
+}
+.nav-mobile-menu {
+  margin-left: 0;
 }
 .mobile-menu-hidden {
   display: flex;
@@ -247,7 +248,6 @@ img {
     display: none;
   }
 .logo-class {
-  width: 44px;
   color: var(--iris-color);
   font-size: 18px;
   font-weight: 800;
@@ -264,7 +264,6 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/img-name-mobile.jpg);
-  max-width: 428px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -324,13 +323,14 @@ img {
   text-align: center;
   align-self: stretch;
   /* Header 2 */
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .section-three-header{
     font-size: 36px;
@@ -342,11 +342,13 @@ img {
     margin-bottom: 72px;
   }
   .section-five-header {
+    font-family: var(--primary-font);
     font-size: 36px;
     color: var(--gray-color);
     line-height: 1.11;
     margin-bottom: 72px;
     text-align: center;
+    letter-spacing: 0.02em;
   }
   
 .visually-hidden {
@@ -395,14 +397,14 @@ img {
 }
 
 .list-four {
-  display: block;
-  margin: auto;
-  gap: 24px;
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
 }
 .list-item-four {
   width: 264px;
-  margin: 72px auto;
   border-radius: 0px 0px 4px 4px;
   background: var(--white-color, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -507,9 +509,6 @@ img {
   height: 72px;
   max-width: 268px;
   text-align: left;
-  margin: 0 auto;
-}
-.footer-paragraph {
   margin: 0 auto;
 }
 /* .logo-class {
@@ -685,7 +684,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   min-height: 40px;
   min-width: 40px;
   padding: 0;
@@ -745,6 +743,7 @@ img {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  font-family: var(--primary-font);
 }
 
 .menu-container.is-open {
@@ -1180,12 +1179,11 @@ li.list-one:not(:last-child) {
     background: var(--cloud-color, #f4f4fd);
   }
   .section-five {
-    padding: 96px 0;
+    max-width: 584px;
+    margin: 0 auto;
   }
   .section-footer {
     padding: 96px 0;
-    width: 768px;
-    height: 456px;
   }
   .section-one-header {
     /* Header 1 */
@@ -1208,17 +1206,7 @@ li.list-one:not(:last-child) {
     align-items: center;
   }
   .section-two-header {
-    color: var(--navy-blue-modal-color, #2e2f42);
-    width: 264px;
     /* Header 2 */
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 111.111% */
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    margin-bottom: 8px;
     text-align: left;
   }
   .section-two-paragraph {
@@ -1244,7 +1232,7 @@ li.list-one:not(:last-child) {
   .list-person {
     padding: 32px 0px;
   }
-  .list-item-four {
+  /* .list-item-four {
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -1254,7 +1242,7 @@ li.list-one:not(:last-child) {
     width: 264px;
     height: 428px;
     box-sizing: border-box;
-  }
+  } */
 
   /* .section-four {
       display: block;
@@ -1272,13 +1260,9 @@ li.list-one:not(:last-child) {
   }
   .list-item-five {
     column-gap: 24px;
-    row-gap: 72px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 72px;
-    justify-content: center;
+  }
+  .section-five-header {
+    font-weight: 700;
   }
   .section-footer-container {
     display: flex;
@@ -1300,16 +1284,10 @@ li.list-one:not(:last-child) {
     align-items: normal;
   }
   .social-media-link {
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
     margin-bottom: 36px;
   }
   .social-media-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    position: relative;
   }
   .foot-form {
     display: flex;
@@ -1322,12 +1300,9 @@ li.list-one:not(:last-child) {
     margin-bottom: 0;
   }
   .foot-form-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: start;
-    text-align: start;
+    display: block;
     margin: 0;
+    max-width: 584px;
   }
   .foot-form-paragraph {
     text-align: left;
@@ -1352,8 +1327,7 @@ li.list-one:not(:last-child) {
       }
       .container { 
         max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 15px;
       
       }
 
@@ -1374,22 +1348,26 @@ li.list-one:not(:last-child) {
       .list-one:focus {  
         color: var(--ocean-color);
       }
-      .nav-list-menu {
+      /* .nav-list-menu {
         margin-left: 120px;
-      }
+      } */
       
       
       .list-two {
         align-items: center;
         gap: 24px;
         flex-direction: row;
-        flex-wrap: wrap;
-        text-align: start;
       }
+      
       
       
       .list-four {
         display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+        flex-wrap: wrap;
+        row-gap: 64px;
+
       
       }
       
@@ -1438,7 +1416,6 @@ li.list-one:not(:last-child) {
       
       .section-one-header {
         font-size: 56px;
-        letter-spacing: 0.02em;
         max-width: 496px;
       }
       
@@ -1446,12 +1423,12 @@ li.list-one:not(:last-child) {
         padding: 120px 0;
       
       }
+
       
       .section-two-header {
-        font-weight: 500;
         font-size: 20px;
-        line-height: 1.2;
         letter-spacing: 0.02em;
+        font-weight: 500;
         margin-bottom: 8px;
         text-align: left;
       }
@@ -1556,7 +1533,9 @@ li.list-one:not(:last-child) {
 
       .foot-form-container {
         margin: 0;
+        display: block;
         align-items: start;
+        max-width: 586px;
       }
       
       .button-class {
@@ -1566,6 +1545,9 @@ li.list-one:not(:last-child) {
         display: flex;
       }
 
+      .section-one-portfolio {
+        padding: 96px 0 120px 0;
+      }
 
 
     
