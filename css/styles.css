@@ -252,7 +252,7 @@ img {
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; 
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -263,7 +263,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name-mob.jpeg);
+    url(../images/img-name-mobile.jpg);
   max-width: 428px;
   background-repeat: no-repeat;
   background-position: center;
@@ -283,7 +283,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/img-name-mob@2x.jpeg);
+      url(./images/img-name-mobile@2x.jpg);
   }
 }
 .section-one-header {
@@ -1120,6 +1120,7 @@ li.list-one:not(:last-child) {
   .list {
     display: flex;
   }
+  
   .list-one {
     flex-wrap: wrap;
     row-gap: 12px;
@@ -1285,6 +1286,7 @@ li.list-one:not(:last-child) {
     flex-direction: row;
     max-width: 584px;
     column-gap: 24px;
+    justify-content: normal;
 
   }
   .footer-container {
@@ -1372,7 +1374,9 @@ li.list-one:not(:last-child) {
       .list-one:focus {  
         color: var(--ocean-color);
       }
-      
+      .nav-list-menu {
+        margin-left: 120px;
+      }
       
       
       .list-two {
@@ -1417,7 +1421,17 @@ li.list-one:not(:last-child) {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
         max-width: 1440px;
       }
-      
+      @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img-name@2x.jpeg);
+    }
+  }
       
       
       
