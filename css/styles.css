@@ -1178,7 +1178,6 @@ li.list-one:not(:last-child) {
     background: var(--cloud-color, #f4f4fd);
   }
   .section-five {
-    max-width: 584px;
     margin: 0 auto;
   }
   .section-footer {
@@ -1259,6 +1258,8 @@ li.list-one:not(:last-child) {
   }
   .list-item-five {
     column-gap: 24px;
+    width: 586px;
+    margin: 0 auto;
   }
   .section-five-header {
     font-weight: 700;
